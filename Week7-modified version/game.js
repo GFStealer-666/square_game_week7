@@ -64,7 +64,13 @@ function bindBox(box){
 	var gameLayer = document.getElementById('game-layer');
 	gameLayer.onclick = function(){
 		score -= 200;
+		
+
 		var scoreDisplay = document.getElementById("score").textContent = score; 
+
+		if(score <= 0){
+			score == 0;
+		}
 	}
 	box.onclick = function(){
 		box.parentNode.removeChild(box);
@@ -78,6 +84,9 @@ function clearScreen(){
 	for (var i=0;i<leftBoxCount.length;i++){
 		leftBoxCount[i].remove();
 	}
+	var scoreDisplay = document.getElementById("score").textContent = "0"; 
+	var boxValue = document.getElementById('numbox').value ="";
+
 }
 
 function toggleStartButton(){
@@ -86,7 +95,7 @@ function toggleStartButton(){
 }
 
 function resetButton(){
-	resetButton.onclick = location.reload();
+	resetButton.onclick = clearScreen();
 }
 
 

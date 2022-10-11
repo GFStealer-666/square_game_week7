@@ -5,13 +5,20 @@
 		<title>Square game</title>
 		<script type="text/javascript" src="game.js"></script>
 		<link rel="stylesheet" type="text/css" href="game.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Indie+Flower&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<!-- these codes were adapted from https://courses.cs.washington.edu/courses/cse154/17sp/lecture/more-dom/code/squares.html  -->
 
-		<fieldset>
-			<legend>Control</legend>
-			Number of box: 
+		
+		<hr class = "hr-red">
+
+		<fieldset class ="game-setting">
+			<legend>Game setting</legend>
+			<div class ="divdeco">
+				Number of box: 
 			<input type="text" name="numbox" id="numbox">
 			<select name="color" id = "color">
   				<option value="red">Red</option>
@@ -22,24 +29,28 @@
 			<select name="difficulty" id="difficulty">
 				<option value="31">Easy</option>
 				<option value="21">Normal</option>
-				<option value="4">Hard</option>
+				<option value="11">Hard</option>
 			</select>
+			
 			<button id="start">Start</button>		
 			<button id="reset" onclick="resetButton()">Reset</button>		
-			<div id="timerClock"> Timer:
+			</div>			
+			<div class ="divdeco"id="timerClock"> Timer:
 				<div id="clock">Select Time</div>
 			</div>
-			<div> Score : 
+			<div class ="divdeco"> Score : 
 				<span id = "score" >0</span>
 			</div>
 		</fieldset>
 
-		
 		
 
 		<div id="game-container">
 			<div id="game-layer"></div>
 		</div>
 	
+		
+		<hr class = "hr-red">
+
 	</body>
 </html>

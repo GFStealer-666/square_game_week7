@@ -1,10 +1,31 @@
+body{
+    font-family: 'Indie Flower', cursive;
+   font-size : 120%;
+   background-color: rgb(240, 255, 255);
+}
+select , button{
+    font-family: 'Indie Flower', cursive;
+    font-size : 80%;
+}
+
+input{
+    font-family: 'Indie Flower', cursive;
+    font-size : 100%;
+}
+
+
+legend{
+    font-size : 300%;
+}
 #game-container {
+    
 	margin-top: 30px;
     display: flex;
     justify-content: space-around;
 }
 
 #game-layer{
+    background-color: rgb(214, 255, 241);
     position: relative;
     width: 500px;
     height: 500px;
@@ -17,7 +38,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    border: 3px solid black;
+    border: 2px solid black;
 }
 
 .square:hover{
@@ -28,9 +49,33 @@
     background-color: red; 
 }
 .blue{
-    background-color: blue; 
+    background-color: rgb(202, 242, 255); 
 }
 
 .green{
     background-color: green; 
+}
+
+.divdeco{
+    padding : 2%;
+}
+
+.game-setting{
+    text-align: center;
+    margin : auto;
+    width : 40%;
+    border-radius: 5%;
+    border-style: ridge;
+    border-color: black;
+}
+
+#clock , #score{
+    font-size : 150%;
+}
+
+.hr-red{
+    border-top: 15px dotted rgb(176, 250, 255);
+    width: 40%;
+    border-bottom: 0px; 
+    margin : 5% auto ;
 }
